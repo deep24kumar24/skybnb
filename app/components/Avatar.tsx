@@ -1,0 +1,16 @@
+"use client"
+
+import Image from "next/image"
+
+const Avatar = () => {
+    return (
+        <Image
+            alt="User Profile Picture"
+            height={30}
+            width={30}
+            className="rounded-full"
+            src="/images/placeholder.jpg" />
+    )
+}
+
+export default Avatar
