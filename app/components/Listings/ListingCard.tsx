@@ -10,7 +10,7 @@ import Button from "../Button";
 
 interface ListingCardProps {
 	data: Listing;
-	reservation: Reservation;
+	reservation?: Reservation;
 	onAction?: (id: string) => void;
 	disabled?: boolean;
 	actionLabel?: string;
@@ -67,11 +67,11 @@ const ListingCard: React.FC<ListingCardProps> = ({
 		<div
 			onClick={() => router.push(`/listings/${data.id}`)}
 			className="col-span-1 cursor-pointer group">
-			<div className="flex flex-col gap-2 w-full">
+			<div className="flex flex-col gap-0 w-full">
 				<div className="aspect-square w-full relative overflow-hidden rounded-xl">
 					<Image
 						fill
-						className="object-cover h-full w-full group-hover:scale-110 transition"
+						className="object-cover h-full w-full group-hover:scale-110 transition duration-300"
 						alt="listing"
 						src={data.imageSrc}
 					/>
@@ -84,15 +84,15 @@ const ListingCard: React.FC<ListingCardProps> = ({
 					</div>
 				</div>
 
-				<div className="font-semibold text-lg">
+				<div className="font-bold text-base">
 					{location?.region}, {location?.label}
 				</div>
-				<div className="font-light text-neutral-500">
+				<div className="text-sm font-light text-neutral-500">
 					{reservationDate || data.category}
 				</div>
 
 				<div className="flex flex-row items-center gap-1">
-					<div className="font-semibold">$ {price}</div>
+					<div className="font-bold">${price}</div>
 
 					{!reservation && (
 						<div className="font-light">night</div>
