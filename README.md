@@ -55,7 +55,7 @@ npm run dev
 ```
 
 
-## Resources and Links:
+## Resources & Tools used:
 
 - [Next.js](https://nextjs.org)
 - [MongoDB](https://www.mongodb.com/)
