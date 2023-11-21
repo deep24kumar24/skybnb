@@ -14,6 +14,7 @@ Features:
 * Github authentication
 * Client form validation and handling using react-hook-form
 * Server error handling using react-toast
+* Image Uploading using Cloudinary
 * More features coming soon...
 
 ### Cloning the repository:
@@ -61,5 +62,6 @@ npm run dev
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Prisma](https://www.prisma.io/)
 - [NextAuth](https://next-auth.js.org/)
+- [Cloudinary](https://cloudinary.com/)
 
 
