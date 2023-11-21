@@ -1,8 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 # Full Stack Airbnb Clone named as Skybnb with Next.js 14 App Router, React, Tailwind, Prisma, MongoDB, NextAuth 2023
 
-This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth.
+This is a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth.
+
+![Frame 25](https://github.com/deep24kumar24/skybnb/assets/23245824/1a3bd41e-8e34-40aa-9874-724eb3a9dc3a)
+
+
+
+[Demo](https://skybnb-alpha.vercel.app/) 
 
 Features:
 
@@ -14,6 +18,7 @@ Features:
 * Github authentication
 * Client form validation and handling using react-hook-form
 * Server error handling using react-toast
+* Image Uploading using Cloudinary
 * More features coming soon...
 
 ### Cloning the repository:
@@ -54,12 +59,13 @@ npm run dev
 ```
 
 
-## Resources and Links:
+## Resources & Tools used:
 
 - [Next.js](https://nextjs.org)
 - [MongoDB](https://www.mongodb.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Prisma](https://www.prisma.io/)
 - [NextAuth](https://next-auth.js.org/)
+- [Cloudinary](https://cloudinary.com/)
 
 
