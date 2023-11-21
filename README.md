@@ -1,10 +1,12 @@
 # Full Stack Airbnb Clone named as Skybnb with Next.js 14 App Router, React, Tailwind, Prisma, MongoDB, NextAuth 2023
 
-This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth.
-![image](https://github.com/deep24kumar24/skybnb/assets/23245824/91f0b3c0-8ece-4fb2-9a37-80c4b4683ba2)
+This is a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth.
+
+![Frame 25](https://github.com/deep24kumar24/skybnb/assets/23245824/1a3bd41e-8e34-40aa-9874-724eb3a9dc3a)
 
 
-[Demo here](https://skybnb-alpha.vercel.app/) 
+
+[Demo](https://skybnb-alpha.vercel.app/) 
 
 Features:
 
