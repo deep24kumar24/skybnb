@@ -47,7 +47,7 @@ const Input: React.FC<InputProps> = ({
                     ${formatPrice ? "pl-9" : "pl-4"}
                     ${
 						errors[id]
-							? "border-rose-500 focus:border-rose-500"
+							? "border-sky-500 focus:border-sky-500"
 							: "border-neutral-300 focus:border-black"
 					}
                 `}
@@ -60,7 +60,7 @@ const Input: React.FC<InputProps> = ({
                     peer-placeholder-shown:translate-y-0
                     peer-focus:scale-75
                     peer-focus:-translate-y-4
-                    ${errors[id] ? "text-rose-500" : "text-zinc-400"}
+                    ${errors[id] ? "text-sky-500" : "text-zinc-400"}
                 `}>
 				{label}
 			</label>
