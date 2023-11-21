@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 # Full Stack Airbnb Clone named as Skybnb with Next.js 14 App Router, React, Tailwind, Prisma, MongoDB, NextAuth 2023
 
 This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth.
+
+[Demo here](https://skybnb-alpha.vercel.app/) 
 
 Features:
 
