@@ -11,14 +11,14 @@ const ListingPage = async ({ params }: { params: IParams }) => {
 	const listing = await getListingById(params);
 	const currentUser = await getCurrentUser();
 
-	if (!listing) {
+	if (!listing || listing.user) {
 		return <EmptyState />;
 	}
 
 	return (
 		<ListingClient
-			listing={listing}
-			currentUser={currentUser}
+			listing={listing!}
+			currentUser={currentUser!}
 		/>
 	);
 };

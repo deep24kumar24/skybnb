@@ -19,12 +19,10 @@ const initialDateRange = {
 
 interface ListingClientProps {
 	reservations?: Reservation[];
-	listing?:
-		| (Listing & {
-				user?: User | null;
-		  })
-		| null;
-	currentUser?: User | null;
+	listing: Listing & {
+		user?: User | null;
+	};
+	currentUser: User;
 }
 
 const ListingClient: React.FC<ListingClientProps> = ({
@@ -119,7 +117,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
 
 					<div className="grid grid-cols-1 md:grid-cols-7 md:gap-10 mt-6">
 						<ListingInfo
-							user={listing.user}
+							user={listing.user!}
 							createdAt={listing.createdAt}
 							category={category}
 							description={listing.description}
