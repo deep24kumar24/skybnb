@@ -8,6 +8,7 @@ interface ButtonProps {
 	outline?: boolean;
 	small?: boolean;
 	icon?: IconType;
+	className?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,6 +17,7 @@ const Button: React.FC<ButtonProps> = ({
 	disabled,
 	outline,
 	small,
+	className,
 	icon: Icon,
 }) => {
 	return (
@@ -31,7 +33,7 @@ const Button: React.FC<ButtonProps> = ({
 				small
 					? "py-1 text-sm font-light border-[1px]"
 					: "py-3 text-md font-semibold border-2"
-			}
+			} ${className}
             `}>
 			{Icon && (
 				<Icon

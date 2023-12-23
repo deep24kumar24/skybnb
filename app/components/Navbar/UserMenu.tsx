@@ -8,13 +8,15 @@ import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
 import { User } from "@prisma/client";
 import { signOut } from "next-auth/react";
-import useRentModal from "@/app/hooks/useRentModal";
+import useRentModal from "@/app/hooks/useCreateListingModal";
+import { useRouter } from "next/navigation";
 
 interface UserMenuProps {
 	currentUser?: User | null;
 }
 
 const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
+	const router = useRouter();
 	const registerModal = useRegisterModal();
 	const loginModal = useLoginModal();
 	const rentModal = useRentModal();
@@ -30,7 +32,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 			return loginModal.onOpen();
 		}
 
-		rentModal.onOpen();
+		router.push("/host/onboard");
 	}, [currentUser, loginModal, rentModal]);
 
 	return (

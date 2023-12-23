@@ -7,7 +7,7 @@ import { IconType } from "react-icons";
 import ListingCategory from "./ListingCategory";
 import dynamic from "next/dynamic";
 
-const Map = dynamic(() => import("../../components/Map"), {
+const Map = dynamic(() => import("../../host/createlisting/Map"), {
 	ssr: false,
 });
 
@@ -61,9 +61,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
 					<Avatar src={user?.image} />
 					<div>
 						Hosted by {user?.name}
-						<div className="font-light text-base">
-							Since {createdAt.toDateString()}
-						</div>
+						<div className="font-light text-base">Since {createdAt.toDateString()}</div>
 					</div>
 				</div>
 			</div>

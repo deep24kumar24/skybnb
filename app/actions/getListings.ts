@@ -8,8 +8,11 @@ export default async function getListings() {
 			},
 		});
 
+		console.log("~~~>>.", listings);
+
 		return listings;
 	} catch (error: any) {
-		throw new Error(error);
+		console.log(error);
+		return [];
 	}
 }
